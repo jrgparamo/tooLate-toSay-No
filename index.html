@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Laura and Jose</title>
+  <!-- <link rel="stylesheet" href="https://d1nkt0x8bzz6gz.cloudfront.net/api/css?family=MrsEavesItalic:Regular"> -->
+
+  <link rel="stylesheet" href="https://d1nkt0x8bzz6gz.cloudfront.net/api/css?family=Futura%20Md%20BT:Medium,Regular">
+
+  <link rel="stylesheet" href="https://d1nkt0x8bzz6gz.cloudfront.net/api/css?family=Fitri:Regular">
+
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="vue.js"></script>
+</head>
+
+<body>
+  <div id="app">
+
+    <div id="name">
+      <h1>
+        <div>
+          Laura Escobedo
+        </div>
+        <span class="name-and">and</span>
+        <div>
+          Jose Rangel
+        </div>
+      </h1>
+    </div>
+
+    <div id="nav">
+        <ul id="nav-list">
+          <li>
+            <a href="#">Wedding Party</a>
+          </li>
+          <li>
+              <a href="#">Our Story</a>
+          </li>
+          <li>
+              <a href="#">Travel</a>
+          </li>
+          <li>
+              <a href="#">Wedding Events</a>
+          </li>
+          <li>
+              <a href="#">Registry</a>
+          </li>
+          <li>
+              <a href="#">Wall</a>
+          </li>
+          <li>
+              <a href="#">Get in Touch</a>
+          </li>
+          <li>
+              <a href="#">Requests</a>
+          </li>
+          <li>
+              <a href="#">Timeline</a>
+          </li>
+          <li>
+              <a href="#">Thank You</a>
+          </li>
+        </ul>
+      </div>
+
+    <div id="count-down">00:00</div>
+
+    <div class="slideshow">
+      <div class="gallery-wrapper">
+          <div class="gallery-spacer"></div>
+          <div id="slide1" class="gallery-slide current-image"></div>
+          <div id="slide2" class="gallery-slide next-image"></div>
+          <div id="slide3" class="gallery-slide inactive-image"></div>
+          <div id="slide4" class="gallery-slide inactive-image"></div>
+          <div id="slide5" class="gallery-slide inactive-image"></div>
+        </div>
+    </div>
+
+
+    <!--
+      <input type="text" v-on:input="changename">
+      <p>{{ name }}</p>
+    -->
+  </div>
+
+  <script>
+    (function(){
+      $(document).ready(init_gallery);
+
+      var cycle_delay = 1000;
+      var cycleTO;
+      var isCycling = false;
+
+      function init_gallery() {
+        $('span').on('click',cycle_gallery);
+        cycleTO = setInterval(cycle_gallery,cycle_delay);
+        $('.gallery-wrapper').hover(
+          function(){
+            clearInterval(cycleTO);
+          },
+          function(){
+            clearInterval(cycleTO);
+            cycleTO = setInterval(cycle_gallery,cycle_delay);
+          }
+        );
+      }
+
+      function cycle_gallery() {
+        if (isCycling) { return; }
+        isCycling = true;
+        var slides = $('.gallery-slide');
+        var curr = slides.filter('.current-image');
+        var next = slides.filter('.next-image');
+        var next_inactive = next.next('.inactive-image');
+        if (!next_inactive.length) {
+          next_inactive = slides.filter('.inactive-image').first();
+        }
+        curr.toggleClass('current-image inactive-image');
+        next.toggleClass('current-image next-image');
+        next_inactive.toggleClass('next-image inactive-image');
+        setTimeout(function(){isCycling = false;},1000);
+      }
+    })();
+    new Vue({
+      el: '#app',
+      data: {
+        name: 'Hello World!'
+      },
+      methods: {
+        changename: function(event) {
+          this.name = event.target.value;
+        },
+        sayHello: function() {
+          return {apple:2};
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
