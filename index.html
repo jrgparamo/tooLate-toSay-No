@@ -66,8 +66,9 @@
               <a href="#">Thank You</a>
           </li>
         </ul>
-      </div>
+    </div>
 
+    <!-- October 23, 2019 -->
     <div id="count-down">00:00</div>
 
     <div class="slideshow">
@@ -78,9 +79,15 @@
           <div id="slide3" class="gallery-slide inactive-image"></div>
           <div id="slide4" class="gallery-slide inactive-image"></div>
           <div id="slide5" class="gallery-slide inactive-image"></div>
+          <div id="slide6" class="gallery-slide inactive-image"></div>
+          <div id="slide7" class="gallery-slide inactive-image"></div>
+          <div id="slide8" class="gallery-slide inactive-image"></div>
+          <div id="slide9" class="gallery-slide inactive-image"></div>
+          <div id="slide10" class="gallery-slide inactive-image"></div>
         </div>
     </div>
 
+    <div class="wedding-party"></div>
 
     <!--
       <input type="text" v-on:input="changename">
@@ -92,12 +99,12 @@
     (function(){
       $(document).ready(init_gallery);
 
-      var cycle_delay = 1000;
+      var cycle_delay = 4000;
       var cycleTO;
       var isCycling = false;
 
       function init_gallery() {
-        $('span').on('click',cycle_gallery);
+        $('.gallery-wrapper').on('click',cycle_gallery);
         cycleTO = setInterval(cycle_gallery,cycle_delay);
         $('.gallery-wrapper').hover(
           function(){

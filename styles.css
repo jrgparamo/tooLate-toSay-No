@@ -43,7 +43,7 @@ body {
     width: 100%;
 }
 
-#nav{
+#nav {
     margin: 30px auto;
     width: 66%;
 }
@@ -73,69 +73,88 @@ ul > li > a {
 }
 
 .gallery-wrapper {
-	position: relative;
-	overflow: hidden;
-	display: inline-block;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
 }
 
 .gallery-spacer {
-	width: 800px;
-	height: 500px;
+    width: 800px;
+    height: 500px;
 }
 
 .current-image {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 600px;
-	height: 500px;
-	transition: width 1s, height 1s, left 1s;
-	z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800px;
+    height: 500px;
+    transition: width 1s, height 1s, left 1s;
+    z-index: 5;
 }
 
 .next-image {
-	position: absolute;
-	top: 0;
-	left: 650px;
-	width: 150px;
-	height: 175px;
-	transition: left 1s;
+    position: absolute;
+    top: 0;
+    left: 650px;
+    width: 150px;
+    height: 175px;
+    transition: left 1s;
     z-index: 4;
-    display: none;
 }
 
 .inactive-image {
-	position: absolute;
-	top: 0;
-	left: 801px;
-	width: 150px;
-	height: 175px;
-	transition: width 0s, height 0s, left 0s;
-	transition-delay: 1s;
-	z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 801px;
+    width: 150px;
+    height: 175px;
+    transition: width 0s, height 0s, left 0s;
+    transition-delay: 1s;
+    z-index: 3;
 }
 
 .gallery-slide {
-	background-position: top center;
-	background-size: cover;
+    background-position: top center;
+    background-size: cover;
 }
 
 #slide1 {
-	background-image: url(./images/photos/IMG_7121.JPG);
+    background-image: url(./images/photos/1.jpg);
 }
 
 #slide2 {
-	background-image: url(./images/photos/IMG_7119.JPG);
+    background-image: url(./images/photos/2.jpg);
 }
 
 #slide3 {
-	background-image: url(./images/photos/IMG_6902.JPG);
+    background-image: url(./images/photos/3.jpg);
 }
 
 #slide4 {
-	background-image: url(./images/photos/IMG_6856.JPG);
+    background-image: url(./images/photos/4.jpg);
 }
 
 #slide5 {
-	background-image: url(./images/photos/IMG_7121.JPG);
+    background-image: url(./images/photos/5.jpg);
+}
+
+#slide6 {
+    background-image: url(./images/photos/6.jpg);
+}
+
+#slide7 {
+    background-image: url(./images/photos/7.jpg);
+}
+
+#slide8 {
+    background-image: url(./images/photos/8.jpg);
+}
+
+#slide9 {
+    background-image: url(./images/photos/9.jpg);
+}
+
+#slide10 {
+    background-image: url(./images/photos/10.jpg);
 }
