@@ -6,13 +6,15 @@
 }
 
 body {
-    background-image: url("./images/splash4.png");
+    background: url("./images/splash4.png") no-repeat;
     background-position: top;
     /* background-color: #1e264F; */
     font-family: "Playfair Display";
     display: flex;
     flex-direction: column;
     margin: 0;
+    color: #d3a54a;
+
 }
 
 #app {
@@ -26,7 +28,7 @@ body {
     color: #d3a54a;
     /* color: #b08635; */
     position: relative;
-    top: 35px;
+    top: 30px;
     font-family: 'Fitri Regular';
 }
 
@@ -41,6 +43,44 @@ body {
     background-color: #1d2c51;
     min-height: 150px;
     width: 100%;
+    align-items: center;
+    bottom: 0;
+    /* background-color: #34495e; */
+    display: flex;
+    justify-content: center;
+    left: 0;
+    position: relative;
+    right: 0;
+    top:0;
+}
+
+.countdown {
+  display: flex;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', serif;
+    font-weight: 40;
+    margin-top:10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.digit {
+    color: #e7af3e;
+    font-size: 60px;
+    font-weight: 100;
+    font-family: 'Playfair Display','Roboto', serif;
+    margin: 10px;
+    text-align: center;
 }
 
 #nav {
@@ -120,41 +160,65 @@ ul > li > a {
 }
 
 #slide1 {
-    background-image: url(./images/photos/1.jpg);
+    background-image: url(./images/photos/slideshow/1.jpg);
 }
 
 #slide2 {
-    background-image: url(./images/photos/2.jpg);
+    background-image: url(./images/photos/slideshow/2.jpg);
 }
 
 #slide3 {
-    background-image: url(./images/photos/3.jpg);
+    background-image: url(./images/photos/slideshow/3.jpg);
 }
 
 #slide4 {
-    background-image: url(./images/photos/4.jpg);
+    background-image: url(./images/photos/slideshow/4.jpg);
 }
 
 #slide5 {
-    background-image: url(./images/photos/5.jpg);
+    background-image: url(./images/photos/slideshow/5.jpg);
 }
 
 #slide6 {
-    background-image: url(./images/photos/6.jpg);
+    background-image: url(./images/photos/slideshow/6.jpg);
 }
 
 #slide7 {
-    background-image: url(./images/photos/7.jpg);
+    background-image: url(./images/photos/slideshow/7.jpg);
 }
 
 #slide8 {
-    background-image: url(./images/photos/8.jpg);
+    background-image: url(./images/photos/slideshow/8.jpg);
 }
 
 #slide9 {
-    background-image: url(./images/photos/9.jpg);
+    background-image: url(./images/photos/slideshow/9.jpg);
 }
 
 #slide10 {
-    background-image: url(./images/photos/10.jpg);
+    background-image: url(./images/photos/slideshow/10.jpg);
+}
+
+.subHeading {
+    position: relative;
+    top: 50px;
+}
+
+
+
+#nav-header {
+    background: url("./images/largeDivider.png") no-repeat;
+    width: 100%;
+    background-position: center;
+    height: 10px;
+    background-repeat: repeat-x;
+}
+
+.page-header {
+    background: url("./images/header-divider.png") no-repeat top;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 6em auto;
+    background-position: center;
+    /* background-size: cover; */
 }
