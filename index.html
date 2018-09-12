@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1">
   <title>Laura and Jose</title>
   <!-- <link rel="stylesheet" href="https://d1nkt0x8bzz6gz.cloudfront.net/api/css?family=MrsEavesItalic:Regular"> -->
 
@@ -96,6 +97,8 @@
       </countdown>
     </div>
 
+    <header id="nav-header"></header>
+
     <div class="slideshow">
       <div class="gallery-wrapper">
           <div class="gallery-spacer"></div>
@@ -112,8 +115,29 @@
         </div>
     </div>
 
+    <div class="our-story content">
+        <header class="content-header">
+          <h1>
+            <div class="subHeading">Our Story</div>
+            <a name="our-story"></a>
+          </h1>
+        </header>
+        <div class="sub-content">
+          <img class="our-story-image" src="./images/photos/ourStory.jpg" alt="">
+          <p class="our-story">
+            It all started in high school and; no, we were not high school sweet hearts. We were so different, and we were in two very different places. It was four years later that we would start our journey to the future.
+  
+            Her smile and energy drew me in to fall in love with her. She can make me feel like I could conquer anything the world threw at me. I knew 6 months into the relationship that she was the one I wanted to spend the rest of my life with. She will always and forever be my rock to stand on.
+  
+            His passion for adventure and different things of the world drew me into him (and let’s not forget that chest). He taught me things by emotions, and I love him for that. I knew he loved me when he would sacrifice his comfort for mine.
+  
+            Through the rough times and good times, we kept finding our way back to each other. We have grown up together and separately and we still feel the same way as when we first met.
+            </p>
+        </div>
+      </div>
+
     <div class="wedding-party">
-      <header class="page-header">
+      <header class="content-header">
         <h1>
           <div class="subHeading">Wedding Party</div>
           <a name="wedding-party"></a>
@@ -121,17 +145,10 @@
       </header>
     </div>
 
-    <div class="our-story">
-      <header class="page-header">
-        <h1>
-          <div class="subHeading">Our Story</div>
-          <a name="our-story"></a>
-        </h1>
-      </header>
-    </div>
+
 
     <div class="travel">
-      <header class="page-header">
+      <header class="content-header">
         <h1>
           <div class="subHeading">Travel</div>
           <a name="travel"></a>
@@ -140,7 +157,7 @@
     </div>
 
     <div class="wedding-event">
-      <header class="page-header">
+      <header class="content-header">
         <h1>
           <div class="subHeading">Wedding Events</div>
           <a name="wedding-event"></a>
@@ -148,17 +165,20 @@
       </header>
     </div>
 
-    <div class="registry">
-      <header class="page-header">
+    <div class="registry content">
+      <header class="content-header">
         <h1>
           <div class="subHeading">Registry</div>
           <a name="registry"></a>
         </h1>
       </header>
+      <div class="sub-content">
+        <h1 style="color:black">Coming Soon!</h1>
+      </div>
     </div>
 
     <div class="wall">
-      <header class="page-header">
+      <header class="content-header">
         <h1>
           <div class="subHeading">Wall</div>
           <a name="wall"></a>
@@ -167,7 +187,7 @@
     </div>
 
     <div class="get-in-touch">
-      <header class="page-header">
+      <header class="content-header">
         <h1>
           <div class="subHeading">Get In Touch</div>
           <a name="get-in-touch"></a>
@@ -176,7 +196,7 @@
     </div>
 
     <div class="requests">
-      <header class="page-header">
+      <header class="content-header">
         <h1>
           <div class="subHeading">Requests</div>
           <a name="requests"></a>
@@ -185,7 +205,7 @@
     </div>
 
     <div class="timeline">
-      <header class="page-header">
+      <header class="content-header">
         <h1>
           <div class="subHeading">Timeline</div>
           <a name="timline"></a>
@@ -193,11 +213,11 @@
       </header>
     </div>
 
-    <div class="thankyou">
-      <header class="page-header">
+    <div class="thank-you">
+      <header class="content-header">
         <h1>
           <div class="subHeading">Thank You</div>
-          <a name="thankyou"></a>
+          <a name="thank-you"></a>
         </h1>
       </header>
     </div>
@@ -300,39 +320,39 @@ var countDownComponent = {
 new Vue({
     el: '#app',
     data: {
-        name: 'Hello World!',
-        cycle_delay: 4000,
-        cycleTO: setInterval(this.cycleGallery,this.cycle_delay),
-        isCycling: false,
-        days: '',
-        hours: '',
-        minutes: '',
-        seconds: ''
+      name: 'Hello World!',
+      cycle_delay: 4000,
+      cycleTO: setInterval(this.cycleGallery,this.cycle_delay),
+      isCycling: false,
+      days: '',
+      hours: '',
+      minutes: '',
+      seconds: ''
     },
     components: {
       'countdown': countDownComponent
     },
     methods: {
-        changename: function(event) {
-        this.name = event.target.value;
-        },
-        sayHello: function() {
-        return {apple:2};
-        },
-        initGallery: function() {
+      changename: function(event) {
+      this.name = event.target.value;
+      },
+      sayHello: function() {
+      return {apple:2};
+      },
+      initGallery: function() {
         $('.gallery-wrapper').on('click',cycleGallery);
         cycleTO = setInterval(cycleGallery,cycle_delay);
         $('.gallery-wrapper').hover(
-            function(){
+          function(){
             clearInterval(cycleTO);
-            },
-            function(){
+          },
+          function(){
             clearInterval(cycleTO);
             cycleTO = setInterval(cycleGallery,cycle_delay);
-            }
-        );
-        },
-        cycleGallery: function() {
+          }
+      );
+      },
+      cycleGallery: function() {
         if (isCycling) { return; }
         isCycling = true;
         var slides = $('.gallery-slide');
@@ -346,7 +366,7 @@ new Vue({
         next.toggleClass('current-image next-image');
         next_inactive.toggleClass('next-image inactive-image');
         setTimeout(function(){isCycling = false;},1000);
-        }
+      }
     }
 });
 </script>

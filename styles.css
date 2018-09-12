@@ -20,6 +20,7 @@ body {
 #app {
     /* width: 66%;
     margin: 0 auto; */
+    /* background: url('./images/pattern-overlay-dark.png'); */
 }
 
 #name {
@@ -131,6 +132,8 @@ ul > li > a {
     height: 500px;
     transition: width 1s, height 1s, left 1s;
     z-index: 5;
+
+	border-radius: 4px;
 }
 
 .next-image {
@@ -141,6 +144,8 @@ ul > li > a {
     height: 175px;
     transition: left 1s;
     z-index: 4;
+
+	border-radius: 4px;
 }
 
 .inactive-image {
@@ -152,11 +157,14 @@ ul > li > a {
     transition: width 0s, height 0s, left 0s;
     transition-delay: 1s;
     z-index: 3;
+
+	border-radius: 4px;
 }
 
 .gallery-slide {
     background-position: top center;
     background-size: cover;
+	border-radius: 4px;
 }
 
 #slide1 {
@@ -204,8 +212,6 @@ ul > li > a {
     top: 50px;
 }
 
-
-
 #nav-header {
     background: url("./images/largeDivider.png") no-repeat;
     width: 100%;
@@ -214,11 +220,41 @@ ul > li > a {
     background-repeat: repeat-x;
 }
 
-.page-header {
-    background: url("./images/header-divider.png") no-repeat top;
+.content {
+    text-align: center;
+}
+
+header.content-header {
+    background: url("./images/divider.png") no-repeat top;
     width: 100%;
     text-align: center;
     margin: 0 auto 6em auto;
     background-position: center;
     /* background-size: cover; */
+}
+
+div.sub-content {
+    width: 66%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+img.our-story-image {
+    border-radius: 50%;
+    width: 30%;
+    align-self: center;
+    margin-bottom: 25px;
+    border-width: 1px;
+    border-color: #e7e7e7;
+    border-style: inset;
+}
+
+p.our-story {
+    color: #1d2c51;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 2em;
+    font-family: "Futura Md BT Medium";
+    text-indent: 5em;
 }
