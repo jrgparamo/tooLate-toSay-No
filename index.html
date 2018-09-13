@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="initial-scale=1">
+
   <title>Laura and Jose</title>
+  <meta name="description" content="Wedding Website for Laura and Jose">
+  <meta name="author" content="Jorge Paramo">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!-- <link rel="stylesheet" href="https://d1nkt0x8bzz6gz.cloudfront.net/api/css?family=MrsEavesItalic:Regular"> -->
 
   <link rel="stylesheet" href="https://d1nkt0x8bzz6gz.cloudfront.net/api/css?family=Futura%20Md%20BT:Medium,Regular">
@@ -13,7 +20,10 @@
   <link rel="stylesheet" href="https://d1nkt0x8bzz6gz.cloudfront.net/api/css?family=Fitri:Regular">
 
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet"> 
-
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="vendor/css/normalizeV8.css">
+  <link rel="stylesheet" href="vendor/css/skeleton.css">
   <link rel="stylesheet" href="styles.css">
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -24,95 +34,118 @@
 <body>
   <div id="app">
 
-    <div id="name">
-      <h1>
-        <div>
-          Laura Escobedo
+    <!-- Title -->
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns">
+          <div id="names">
+              <h1>
+                <div class="name">Laura Escobedo</div>
+              </h1>
+              <span class="name-and">and</span>
+              <h1>
+                <div class="name">Jose Rangel</div>
+              </h1>
+          </div>
         </div>
-        <span class="name-and">and</span>
-        <div>
-          Jose Rangel
-        </div>
-      </h1>
+      </div>
     </div>
 
-    <div id="nav">
-        <ul id="nav-list">
-          <li>
-            <a href="#wedding-party">Wedding Party</a>
-          </li>
-          <li>
-              <a href="#our-story">Our Story</a>
-          </li>
-          <li>
-              <a href="#travel">Travel</a>
-          </li>
-          <li>
-              <a href="#wedding-events">Wedding Events</a>
-          </li>
-          <li>
-              <a href="#registry">Registry</a>
-          </li>
-          <li>
-              <a href="#wall">Wall</a>
-          </li>
-          <li>
-              <a href="#get-in-touch">Get in Touch</a>
-          </li>
-          <li>
-              <a href="#requests">Requests</a>
-          </li>
-          <li>
-              <a href="#timeline">Timeline</a>
-          </li>
-          <li>
-              <a href="#thank-you">Thank You</a>
-          </li>
-        </ul>
-    </div>
-    <header id="nav-header"></header>
-    <!-- October 23, 2019 -->
-    <!-- 2019-10-22 23:59:00 -->
-    <!-- "Y-m-d H:i:s" -->
-    <div id="count-down">
-      <countdown date="2019-10-22 23:59:00" inline-template>
-        <div class="countdown">
-          <div class="block">
-            <p class="digit">{{ days | two_digits }}</p>
-            <p class="text">Days</p>
-          </div>
-          <div class="block">
-            <p class="digit">{{ hours | two_digits }}</p>
-            <p class="text">Hours</p>
-          </div>
-          <div class="block">
-            <p class="digit">{{ minutes | two_digits }}</p>
-            <p class="text">Minutes</p>
-          </div>
-          <div class="block">
-            <p class="digit">{{ seconds | two_digits }}</p>
-            <p class="text">Seconds</p>
+    <!-- Navigation -->
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns">
+          <div id="nav">
+            <ul id="nav-list">
+              <li>
+                <a href="#wedding-party">Wedding Party</a>
+              </li>
+              <li>
+                  <a href="#our-story">Our Story</a>
+              </li>
+              <li>
+                  <a href="#travel">Travel</a>
+              </li>
+              <li>
+                  <a href="#wedding-events">Wedding Events</a>
+              </li>
+              <li>
+                  <a href="#registry">Registry</a>
+              </li>
+              <li>
+                  <a href="#wall">Wall</a>
+              </li>
+              <li>
+                  <a href="#get-in-touch">Get in Touch</a>
+              </li>
+              <li>
+                  <a href="#requests">Requests</a>
+              </li>
+              <li>
+                  <a href="#timeline">Timeline</a>
+              </li>
+              <li>
+                  <a href="#thank-you">Thank You</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </countdown>
+      </div>
     </div>
 
-    <header id="nav-header"></header>
-
-    <div class="slideshow">
-      <div class="gallery-wrapper">
-          <div class="gallery-spacer"></div>
-          <div id="slide1" class="gallery-slide current-image"></div>
-          <div id="slide2" class="gallery-slide next-image"></div>
-          <div id="slide3" class="gallery-slide inactive-image"></div>
-          <div id="slide4" class="gallery-slide inactive-image"></div>
-          <div id="slide5" class="gallery-slide inactive-image"></div>
-          <div id="slide6" class="gallery-slide inactive-image"></div>
-          <div id="slide7" class="gallery-slide inactive-image"></div>
-          <div id="slide8" class="gallery-slide inactive-image"></div>
-          <div id="slide9" class="gallery-slide inactive-image"></div>
-          <div id="slide10" class="gallery-slide inactive-image"></div>
+    <!-- Countdown -->
+    <div class="row">
+      <div class="twelve columns">
+        <header id="nav-header"></header>
+        <!-- October 23, 2019 -->
+        <!-- 2019-10-22 23:59:00 -->
+        <!-- "Y-m-d H:i:s" -->
+        <div id="count-down" class="u-full-width">
+          <countdown date="2019-10-22 23:59:00" inline-template>
+            <div class="countdown">
+              <div class="block">
+                <p class="digit">{{ days | two_digits }}</p>
+                <p class="text">Days</p>
+              </div>
+              <div class="block">
+                <p class="digit">{{ hours | two_digits }}</p>
+                <p class="text">Hours</p>
+              </div>
+              <div class="block">
+                <p class="digit">{{ minutes | two_digits }}</p>
+                <p class="text">Minutes</p>
+              </div>
+              <div class="block">
+                <p class="digit">{{ seconds | two_digits }}</p>
+                <p class="text">Seconds</p>
+              </div>
+            </div>
+          </countdown>
         </div>
+        <header id="nav-header"></header>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns">
+          <div class="slideshow">
+            <div class="gallery-wrapper">
+              <div class="gallery-spacer"></div>
+              <div id="slide1" class="gallery-slide current-image"></div>
+              <div id="slide2" class="gallery-slide next-image"></div>
+              <div id="slide3" class="gallery-slide inactive-image"></div>
+              <div id="slide4" class="gallery-slide inactive-image"></div>
+              <div id="slide5" class="gallery-slide inactive-image"></div>
+              <div id="slide6" class="gallery-slide inactive-image"></div>
+              <div id="slide7" class="gallery-slide inactive-image"></div>
+              <div id="slide8" class="gallery-slide inactive-image"></div>
+              <div id="slide9" class="gallery-slide inactive-image"></div>
+              <div id="slide10" class="gallery-slide inactive-image"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="our-story content">
@@ -144,8 +177,6 @@
         </h1>
       </header>
     </div>
-
-
 
     <div class="travel">
       <header class="content-header">
@@ -227,7 +258,6 @@
       <p>{{ name }}</p>
     -->
   </div>
-
 </body>
 
 <!-- <script src="./main.js"></script> -->

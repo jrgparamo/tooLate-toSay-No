@@ -23,14 +23,18 @@ body {
     /* background: url('./images/pattern-overlay-dark.png'); */
 }
 
-#name {
-    font-size: 2em;
+#names {
     text-align: center;
     color: #d3a54a;
     /* color: #b08635; */
     position: relative;
     top: 30px;
+    margin: 65px;
+}
+.name {
+    font-size: 64px;
     font-family: 'Fitri Regular';
+    font-weight: bold;
 }
 
 .name-and {
@@ -45,14 +49,14 @@ body {
     min-height: 150px;
     width: 100%;
     align-items: center;
-    bottom: 0;
+    /* bottom: 0; */
     /* background-color: #34495e; */
     display: flex;
     justify-content: center;
-    left: 0;
+    /* left: 0;
     position: relative;
     right: 0;
-    top:0;
+    top:0; */
 }
 
 .countdown {
@@ -86,7 +90,6 @@ body {
 
 #nav {
     margin: 30px auto;
-    width: 66%;
 }
 
 #nav-list {
