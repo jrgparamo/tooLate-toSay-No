@@ -1,41 +1,85 @@
-@font-face {
-    font-family: 'MrsEavesItalic';
-    src: url('./fonts/mrseavesitalic-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-         url('./fonts/mrseavesitalic-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('./fonts/mrseavesitalic-webfont.svg') format('svg'); /* Legacy iOS */
-}
+<template>
+  <div id="app">
+    <Index/>
+  </div>
+</template>
 
-body {
-    background: url("./images/splash4.png") no-repeat;
+<script>
+import Index from './components/Index';
+
+export default {
+  name: 'App',
+  components: {
+    Index,
+  },
+};
+</script>
+
+<style>
+  @font-face {
+    font-family: 'MrsEavesItalic';
+    src: url('/static/fonts/mrseavesitalic-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+    url('/static/fonts/mrseavesitalic-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('/static/fonts/mrseavesitalic-webfont.svg') format('svg'); /* Legacy iOS */
+  }
+
+  body {
+    background: url("/static/images/splash4.png") no-repeat;
     background-position: top;
     /* background-color: #1e264F; */
-    font-family: "Playfair Display";
+    font-family: 'Playfair Display', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     display: flex;
     flex-direction: column;
     margin: 0;
     color: #d3a54a;
+  }
 
-}
-
-#app {
-    /* width: 66%;
-    margin: 0 auto; */
-    /* background: url('./images/pattern-overlay-dark.png'); */
-}
-
-#name {
-    font-size: 2em;
+  #app {
     text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+  }
+
+  .title, .subtitle {
     color: #d3a54a;
     /* color: #b08635; */
-    position: relative;
-    top: 30px;
-    font-family: 'Fitri Regular';
-}
+  }
 
-.name-and {
+  .title.is-1 {
+    font-size: 4rem;
+  }
+
+  #name {
+    position: relative;
+    top: 10px;
+    font-family: 'Fitri Regular';
+  }
+
+  .name-and {
     font-family: 'MrsEavesItalic';
-    font-size: 32px;
+  }
+
+  #nav {
+    margin: 30px auto;
+ }
+
+  #nav > p > a {
+    font-size: 20px;
+    color: #9e8562;
+  }
+
+  .level-item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+.countdown-header {
+    background: url("/static/images/largeDivider.png") no-repeat;
+    width: 100%;
+    background-position: center;
+    height: 10px;
+    background-repeat: repeat-x;
 }
 
 #count-down {
@@ -84,30 +128,7 @@ body {
     text-align: center;
 }
 
-#nav {
-    margin: 30px auto;
-    width: 66%;
-}
 
-#nav-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    font-size: 20px;
-}
-
-ul {
-    list-style: none;
-}
-
-ul > li {
-    margin-right: 10px;
-}
-
-ul > li > a {
-    color: #9e8562;
-    text-decoration: none;
-}
 
 .slideshow {
     text-align: center;
@@ -168,56 +189,49 @@ ul > li > a {
 }
 
 #slide1 {
-    background-image: url(./images/photos/slideshow/1.jpg);
+    background-image: url(/static/images/photos/slideshow/1.jpg);
 }
 
 #slide2 {
-    background-image: url(./images/photos/slideshow/2.jpg);
+    background-image: url(/static/images/photos/slideshow/2.jpg);
 }
 
 #slide3 {
-    background-image: url(./images/photos/slideshow/3.jpg);
+    background-image: url(/static/images/photos/slideshow/3.jpg);
 }
 
 #slide4 {
-    background-image: url(./images/photos/slideshow/4.jpg);
+    background-image: url(/static/images/photos/slideshow/4.jpg);
 }
 
 #slide5 {
-    background-image: url(./images/photos/slideshow/5.jpg);
+    background-image: url(/static/images/photos/slideshow/5.jpg);
 }
 
 #slide6 {
-    background-image: url(./images/photos/slideshow/6.jpg);
+    background-image: url(/static/images/photos/slideshow/6.jpg);
 }
 
 #slide7 {
-    background-image: url(./images/photos/slideshow/7.jpg);
+    background-image: url(/static/images/photos/slideshow/7.jpg);
 }
 
 #slide8 {
-    background-image: url(./images/photos/slideshow/8.jpg);
+    background-image: url(/static/images/photos/slideshow/8.jpg);
 }
 
 #slide9 {
-    background-image: url(./images/photos/slideshow/9.jpg);
+    background-image: url(/static/images/photos/slideshow/9.jpg);
 }
 
 #slide10 {
-    background-image: url(./images/photos/slideshow/10.jpg);
+    background-image: url(/static/images/photos/slideshow/10.jpg);
 }
 
 .subHeading {
     position: relative;
     top: 50px;
-}
-
-#nav-header {
-    background: url("./images/largeDivider.png") no-repeat;
-    width: 100%;
-    background-position: center;
-    height: 10px;
-    background-repeat: repeat-x;
+    color: #d3a54a;
 }
 
 .content {
@@ -225,7 +239,7 @@ ul > li > a {
 }
 
 header.content-header {
-    background: url("./images/divider.png") no-repeat top;
+    background: url("/static/images/divider.png") no-repeat top;
     width: 100%;
     text-align: center;
     margin: 0 auto 6em auto;
@@ -258,3 +272,5 @@ p.our-story {
     font-family: "Futura Md BT Medium";
     text-indent: 5em;
 }
+
+</style>
