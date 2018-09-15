@@ -158,29 +158,34 @@
                         <div class="subHeading">Wedding Party</div>
                     </h1>
                 </header>
-                <div class="subtitle is-4">Girls</div>
+                <div class="subtitle is-3">Bridesmaids</div>
                 <div class="content">
                     <div class="box">
                         <!-- Julie -->
                         <article class="media">
                             <div class="media-left">
                             <figure class="image is-128x128">
-                                <img src="/static/images/photos/weddingParty/girls/julie.jpg" alt="Julie">
+                                <img
+                                src="/static/images/photos/weddingParty/girls/julie.jpg"
+                                alt="Julie">
                             </figure>
                             </div>
                             <div class="media-content">
-                            <div class="content">
+                            <div class="content girls">
                                 <p>
                                     <strong>Julie</strong>
                                 </p>
                                 <p>
-                                    .
+                                    So this one time after kickboxing class, Laura drove me home. It was our first car ride together and we were just talking about our lives, then it got VERY EMOTIONAL😭😭! Lol
                                 </p>
                                 <p>
-                                    .
+                                    She started telling me about how much she really loved Jose and that she wanted their relationship to work out and all I can think about besides the fear for my LIFE 😂 all the times Jose would call me and tell me “I really love Laura and she’s my one and only”
                                 </p>
                                 <p>
-                                    !
+                                    I realized that they need to be together and they are one of the few couples I know that support one another.
+                                </p>
+                                <p>
+                                    They are truly in love and I am honored to be a part of this Wedding. I love the both of you!😘
                                 </p>
                             </div>
                             <nav class="level is-mobile">
@@ -214,7 +219,7 @@
                             </figure>
                             </div>
                             <div class="media-content">
-                            <div class="content">
+                            <div class="content girls">
                                 <p>
                                     <strong>Naz</strong>
                                 </p>
@@ -256,11 +261,11 @@
                         <article class="media">
                             <div class="media-left">
                             <figure class="image is-128x128">
-                                <img src="/static/images/photos/weddingParty/girls/pricilla.jpg" alt="Priscilla">
+                                <img src="/static/images/photos/weddingParty/girls/priscilla.jpg" alt="Priscilla">
                             </figure>
                             </div>
                             <div class="media-content">
-                            <div class="content">
+                            <div class="content girls">
                                 <p>
                                     <strong>Priscilla</strong>
                                 </p>
@@ -305,7 +310,7 @@
                             </figure>
                             </div>
                             <div class="media-content">
-                            <div class="content">
+                            <div class="content girls">
                                 <p>
                                     <strong>Sandra</strong>
                                 </p>
@@ -313,22 +318,22 @@
                                     Laura and I became friends towards the end of our senior year in high school, BUT...I had noticed her wayyy before that. (This speaks volumes as our high school had nearly 4,000 students). Before I actually met her, there were two things that were obviously very important in her life, one was hair color. I swear this girl had a different color in her hair every time I saw her! The other...<strong>DANCING</strong>.
                                 </p>
                                 <p>
-                                    We were in a Latin dance club together and her passion for dancing radiated! When we actually met and became friends, this was how we'd have the most fun, dancing and singing our hearts out. We always said that we could never be with a guy that didn't know how to dance and then <strong>BAM!</strong> 
+                                    We were in a Latin dance club together and her passion for dancing radiated! When we actually met and became friends, this was how we'd have the most fun, dancing and singing our hearts out. We always said that we could never be with a guy that didn't know how to dance and then <strong>BAM!</strong>
                                 </p>
                                 <p>
-                                    She fell in love with Jose. 
+                                    She fell in love with Jose.
                                 </p>
                                 <p>
-                                    How would this last? How!? He doesn't know how to dance, and his hair is just…Brown. Nothing in common. 
+                                    How would this last? How!? He doesn't know how to dance, and his hair is just…Brown. Nothing in common.
                                 </p>
                                 <p>
-                                    But Jose reached out and asked for help on learning how to dance. He was open to learning, and Laura was open to teaching him. She was patient with him and although it wasn't a fast process, he didn't give up. 
+                                    But Jose reached out and asked for help on learning how to dance. He was open to learning, and Laura was open to teaching him. She was patient with him and although it wasn't a fast process, he didn't give up.
                                 </p>
                                 <p>
-                                    Today, they dance their butts off to all kinds of music and you'd never know that they couldn't follow each other’s rhythm at first. 
+                                    Today, they dance their butts off to all kinds of music and you'd never know that they couldn't follow each other’s rhythm at first.
                                 </p>
                                 <p>
-                                    Their relationship has taught me that it's easy to love someone that already knows how to dance. But true love is patient, open minded, and perseverant. Dancing is where they first implemented these qualities, but it's obvious that they continued these traits onto the rest of their relationship. 
+                                    Their relationship has taught me that it's easy to love someone that already knows how to dance. But true love is patient, open minded, and perseverant. Dancing is where they first implemented these qualities, but it's obvious that they continued these traits onto the rest of their relationship.
                                 </p>
                                 <p>
                                     It was funny seeing them struggle to dance the first time, but now I’m elated to witness their first dance as Mr. & Mrs. Rangel Escobedo.
@@ -365,7 +370,7 @@
                             </figure>
                             </div>
                             <div class="media-content">
-                            <div class="content">
+                            <div class="content girls">
                                 <p>
                                     <strong>Stormie</strong>
                                 </p>
@@ -373,7 +378,7 @@
                                     Ever since I met Laura, she has always had this crazy love for dancing.
                                 </p>
                                 <p>
-                                    One night, Laura, Jose, and I went to club 2001. A song came on that Laura wanted to dance, so she and Jose made their way to the dance floor while I hung back and watched. 
+                                    One night, Laura, Jose, and I went to club 2001. A song came on that Laura wanted to dance, so she and Jose made their way to the dance floor while I hung back and watched.
                                 </p>
                                 <p>
                                     I remember watching them and <strong>Laura looked sooo happy!</strong>

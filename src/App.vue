@@ -164,15 +164,41 @@ img.our-story-image {
 }
 
 p.our-story {
-    color: #1d2c51;
-    text-align: justify;
-    font-size: 20px;
-    line-height: 2em;
-    font-family: "Futura Md BT Medium";
-    text-indent: 5em;
+  color: #1d2c51;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 2em;
+  font-family: "Futura Md BT Medium";
+  text-indent: 5em;
 }
 
 .content > p {
   text-align: left;
+}
+
+.girls > p {
+  color: #1d2c51;
+  font-size: 20px;
+  line-height: 2em;
+  font-family: "Futura Md BT Medium";
+}
+
+.box {
+  padding: 2.5rem;
+}
+.image.is-128x128 {
+  height:100%;
+}
+
+@media screen and (max-width: 767px){
+  .media {
+    flex-direction: column;
+  }
+  /* .media-left {
+    margin-bottom: 7em;
+  } */
+  .content figure {
+    margin-left: 0px;
+  }
 }
 </style>
