@@ -16,18 +16,13 @@ export default {
 </script>
 
 <style>
-  @font-face {
-    font-family: 'MrsEavesItalic';
-    src: url('/static/fonts/mrseavesitalic-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-    url('/static/fonts/mrseavesitalic-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-    url('/static/fonts/mrseavesitalic-webfont.svg') format('svg'); /* Legacy iOS */
-  }
+  html, body { overflow-x: hidden !important;}
 
   body {
     background: url("/static/images/splash4.png") no-repeat;
     background-position: top;
     /* background-color: #1e264F; */
-    font-family: 'Playfair Display', Helvetica, Arial, sans-serif;
+    font-family: 'Playfair Display', Helvetica, Arial, sans-serif !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     display: flex;
@@ -38,12 +33,12 @@ export default {
 
   #app {
     text-align: center;
-    color: #2c3e50;
+    /* color: #2c3e50; */
     margin-top: 60px;
   }
 
   .title, .subtitle {
-    color: #d3a54a;
+    color: #d3a54a !important;
     /* color: #b08635; */
   }
 
@@ -58,7 +53,7 @@ export default {
   }
 
   .name-and {
-    font-family: 'MrsEavesItalic';
+    font-family: 'MrsEavesItalic Regular';
   }
 
   #nav {
@@ -106,7 +101,7 @@ export default {
 .block {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 0px;
 }
 
 .text {
@@ -121,111 +116,15 @@ export default {
 
 .digit {
     color: #e7af3e;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 100;
     font-family: 'Playfair Display','Roboto', serif;
     margin: 10px;
     text-align: center;
 }
 
-
-
 .slideshow {
     text-align: center;
-}
-
-.gallery-wrapper {
-    position: relative;
-    overflow: hidden;
-    display: inline-block;
-}
-
-.gallery-spacer {
-    width: 800px;
-    height: 500px;
-}
-
-.current-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 800px;
-    height: 500px;
-    transition: width 1s, height 1s, left 1s;
-    z-index: 5;
-
-	border-radius: 4px;
-}
-
-.next-image {
-    position: absolute;
-    top: 0;
-    left: 650px;
-    width: 150px;
-    height: 175px;
-    transition: left 1s;
-    z-index: 4;
-
-	border-radius: 4px;
-}
-
-.inactive-image {
-    position: absolute;
-    top: 0;
-    left: 801px;
-    width: 150px;
-    height: 175px;
-    transition: width 0s, height 0s, left 0s;
-    transition-delay: 1s;
-    z-index: 3;
-
-	border-radius: 4px;
-}
-
-.gallery-slide {
-    background-position: top center;
-    background-size: cover;
-	border-radius: 4px;
-}
-
-#slide1 {
-    background-image: url(/static/images/photos/slideshow/1.jpg);
-}
-
-#slide2 {
-    background-image: url(/static/images/photos/slideshow/2.jpg);
-}
-
-#slide3 {
-    background-image: url(/static/images/photos/slideshow/3.jpg);
-}
-
-#slide4 {
-    background-image: url(/static/images/photos/slideshow/4.jpg);
-}
-
-#slide5 {
-    background-image: url(/static/images/photos/slideshow/5.jpg);
-}
-
-#slide6 {
-    background-image: url(/static/images/photos/slideshow/6.jpg);
-}
-
-#slide7 {
-    background-image: url(/static/images/photos/slideshow/7.jpg);
-}
-
-#slide8 {
-    background-image: url(/static/images/photos/slideshow/8.jpg);
-}
-
-#slide9 {
-    background-image: url(/static/images/photos/slideshow/9.jpg);
-}
-
-#slide10 {
-    background-image: url(/static/images/photos/slideshow/10.jpg);
 }
 
 .subHeading {

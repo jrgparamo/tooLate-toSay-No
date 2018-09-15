@@ -13,10 +13,10 @@
 
             <nav id="nav" class="level">
                 <p class="level-item has-text-centered">
-                    <a class="link is-info" href="#wedding-party">Wedding Party</a>
+                    <a class="link is-info" href="#our-story">Our Story</a>
                 </p>
                 <p class="level-item has-text-centered">
-                    <a class="link is-info" href="#our-story">Our Story</a>
+                    <a class="link is-info" href="#wedding-party">Wedding Party</a>
                 </p>
                 <p class="level-item has-text-centered">
                     <a class="link is-info" href="#travel">Travel</a>
@@ -53,19 +53,19 @@
             <countdown date="2019-10-22 23:59:00" inline-template>
                 <div class="countdown">
                 <div class="block">
-                    <p class="digit">{{ days | two_digits }}</p>
+                    <p class="digit">{{ days }}</p>
                     <p class="text">Days</p>
                 </div>
                 <div class="block">
-                    <p class="digit">{{ hours | two_digits }}</p>
+                    <p class="digit">{{ hours }}</p>
                     <p class="text">Hours</p>
                 </div>
                 <div class="block">
-                    <p class="digit">{{ minutes | two_digits }}</p>
+                    <p class="digit">{{ minutes }}</p>
                     <p class="text">Minutes</p>
                 </div>
                 <div class="block">
-                    <p class="digit">{{ seconds | two_digits }}</p>
+                    <p class="digit">{{ seconds }}</p>
                     <p class="text">Seconds</p>
                 </div>
                 </div>
@@ -75,41 +75,77 @@
 
         <div class="container">
             <div class="slideshow">
-                <div class="gallery-wrapper">
-                    <div class="gallery-spacer"></div>
-                    <div id="slide1" class="gallery-slide current-image"></div>
-                    <div id="slide2" class="gallery-slide next-image"></div>
-                    <div id="slide3" class="gallery-slide inactive-image"></div>
-                    <div id="slide4" class="gallery-slide inactive-image"></div>
-                    <div id="slide5" class="gallery-slide inactive-image"></div>
-                    <div id="slide6" class="gallery-slide inactive-image"></div>
-                    <div id="slide7" class="gallery-slide inactive-image"></div>
-                    <div id="slide8" class="gallery-slide inactive-image"></div>
-                    <div id="slide9" class="gallery-slide inactive-image"></div>
-                    <div id="slide10" class="gallery-slide inactive-image"></div>
-                </div>
+                <carousel
+                :paginationEnabled=true
+                :per-page=1 :loop=true
+                :autoplay=true
+                :autoplayHoverPause=true
+                :navigationEnabled=false
+                :autoplayTimeout=2000>
+                    <slide>
+                        <img src="/static/images/photos/slideshow/1.jpg" alt="">
+                    </slide>
+                    <slide>
+                        <img src="/static/images/photos/slideshow/2.jpg" alt="">
+                    </slide>
+
+                    <slide>
+                        <img src="/static/images/photos/slideshow/4.jpg" alt="">
+                    </slide>
+                    <slide>
+                        <img src="/static/images/photos/slideshow/5.jpg" alt="">
+                    </slide>
+                    <slide>
+                        <img src="/static/images/photos/slideshow/6.jpg" alt="">
+                    </slide>
+                    <slide>
+                        <img src="/static/images/photos/slideshow/7.jpg" alt="">
+                    </slide>
+                    <slide>
+                        <img src="/static/images/photos/slideshow/8.jpg" alt="">
+                    </slide>
+                    <slide>
+                        <img src="/static/images/photos/slideshow/9.jpg" alt="">
+                    </slide>
+                    <slide>
+                        <img src="/static/images/photos/slideshow/10.jpg" alt="">
+                    </slide>
+                </carousel>
             </div>
 
             <div class="our-story content">
+                <a name="our-story"></a>
                 <header class="content-header">
                 <h1>
                     <div class="subHeading">Our Story</div>
-                    <a name="our-story"></a>
                 </h1>
                 </header>
                 <div class="sub-content">
                     <img class="our-story-image" src="/static/images/photos/ourStory.jpg" alt="">
                     <p class="our-story">
-                        It all started in high school and; no, we were not high school sweet hearts. We were so different, and we were in two very different places. It was four years later that we would start our journey to the future.
+                        It all started in high school and; no, we were not high
+                        school sweet hearts.
+                        We were so different, and we were in two very different places.
+                        It was four years later that we would start our journey to the future.
                     </p>
                     <p class="our-story">
-                        Her smile and energy drew me in to fall in love with her. She can make me feel like I could conquer anything the world threw at me. I knew 6 months into the relationship that she was the one I wanted to spend the rest of my life with. She will always and forever be my rock to stand on.
+                        Her smile and energy drew me in to fall in love with her.
+                        She can make me feel like I could conquer anything the world threw at me.
+                        I knew 6 months into the relationship that she was the
+                        one I wanted to spend the rest of my life with.
+                        She will always and forever be my rock to stand on.
                     </p>
                     <p class="our-story">
-                        His passion for adventure and different things of the world drew me into him (and let’s not forget that chest). He taught me things by emotions, and I love him for that. I knew he loved me when he would sacrifice his comfort for mine.
+                        His passion for adventure and different things of the
+                        world drew me into him (and let’s not forget that chest).
+                        He taught me things by emotions, and I love him for that.
+                        I knew he loved me when he would sacrifice his comfort for mine.
                     </p>
                     <p class="our-story">
-                        Through the rough times and good times, we kept finding our way back to each other. We have grown up together and separately and we still feel the same way as when we first met.
+                        Through the rough times and good times, we kept
+                        finding our way back to each other.
+                        We have grown up together and separately and we
+                        still feel the same way as when we first met.
                     </p>
                 </div>
             </div>
@@ -207,61 +243,60 @@
 </template>
 
 <script>
-var countDownComponent = {
-    mounted() {
-        window.setInterval(() => {
-            this.now = Math.trunc((new Date()).getTime() / 1000);
-        },1000);
+import { Carousel, Slide } from 'vue-carousel';
+
+const countDownComponent = {
+  mounted() {
+    window.setInterval(() => {
+      this.now = Math.trunc((new Date()).getTime() / 1000);
+    }, 1000);
+  },
+  props: {
+    date: {
+      type: String,
     },
-    props: {
-        date: {
-            type: String
-        }
+  },
+  data() {
+    return {
+      now: Math.trunc((new Date()).getTime() / 1000),
+    };
+  },
+  computed: {
+    dateInMilliseconds() {
+      return Math.trunc(Date.parse(this.date) / 1000);
     },
-    data() {
-        return {
-            now: Math.trunc((new Date()).getTime() / 1000)
-        }
+    seconds() {
+      return (this.dateInMilliseconds - this.now) % 60;
     },
-    computed: {
-        dateInMilliseconds() {
-            return Math.trunc(Date.parse(this.date) / 1000)
-        },
-        seconds() {
-            return (this.dateInMilliseconds - this.now) % 60;
-        },
-        minutes() {
-            return Math.trunc((this.dateInMilliseconds - this.now) / 60) % 60;
-        },
-        hours() {
-            return Math.trunc((this.dateInMilliseconds - this.now) / 60 / 60) % 24;
-        },
-        days() {
-            return Math.trunc((this.dateInMilliseconds - this.now) / 60 / 60 / 24);
-        }
+    minutes() {
+      return Math.trunc((this.dateInMilliseconds - this.now) / 60) % 60;
     },
-    filters: {
-        two_digits(value) {
-            if (value < 0) {
-                return '00';
-            }
-            if (value.toString().length <= 1) {
-                return `0${value}`;
-            }
-            return value;
-        }
-    }
+    hours() {
+      return Math.trunc((this.dateInMilliseconds - this.now) / 60 / 60) % 24;
+    },
+    days() {
+      return Math.trunc((this.dateInMilliseconds - this.now) / 60 / 60 / 24);
+    },
+  },
+  filters: {
+    two_digits(value) {
+      if (value < 0) {
+        return '00';
+      }
+      if (value.toString().length <= 1) {
+        return `0${value}`;
+      }
+      return value;
+    },
+  },
 };
 
 export default {
   name: 'Index',
   components: {
-    'countdown': countDownComponent
-  },
-  data() {
-    return {
-      msg: 'Welcome to Your Vue.js App',
-    };
+    countdown: countDownComponent,
+    carousel: Carousel,
+    slide: Slide,
   },
 };
 </script>
