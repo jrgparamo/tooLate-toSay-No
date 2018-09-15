@@ -101,7 +101,7 @@ export default {
 .block {
     display: flex;
     flex-direction: column;
-    margin: 15px;
+    margin: 20px;
 }
 
 .text {
@@ -184,10 +184,10 @@ p.our-story {
 }
 
 .box {
-  padding: 2.5rem;
+  padding: 2.5rem !important;
 }
 .image.is-128x128 {
-  height:100%;
+  height:100% !important;
 }
 
 @media screen and (max-width: 767px){
@@ -198,7 +198,10 @@ p.our-story {
     margin-bottom: 7em;
   } */
   .content figure {
-    margin-left: 0px;
+    margin-left: 0px !important;
+  }
+  .block {
+    margin:10px;
   }
 }
 </style>

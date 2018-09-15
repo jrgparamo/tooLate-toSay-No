@@ -224,7 +224,7 @@
                                     <strong>Naz</strong>
                                 </p>
                                 <p>
-                                    I'm part of Laura’s elite entourage.
+                                    I'm part of Laura’s <strong>elite entourage</strong>.
                                 </p>
                                 <p>We really clicked senior year of high school, which paved the way to continue our shenanigans in college. \m/</p>
                                 <p>
