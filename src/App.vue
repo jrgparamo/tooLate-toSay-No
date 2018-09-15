@@ -101,7 +101,7 @@ export default {
 .block {
     display: flex;
     flex-direction: column;
-    margin: 0px;
+    margin: 15px;
 }
 
 .text {
@@ -172,4 +172,7 @@ p.our-story {
     text-indent: 5em;
 }
 
+.content > p {
+  text-align: left;
+}
 </style>

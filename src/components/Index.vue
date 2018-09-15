@@ -1,5 +1,6 @@
 <template>
     <div>
+        <!-- Names and Nav container -->
         <div class="container">
             <div id="name">
                 <div>
@@ -44,28 +45,28 @@
                 </p>
             </nav>
         </div>
-
+        <!-- Countdown Ribbon -->
         <header class="countdown-header"></header>
         <!-- October 23, 2019 -->
         <!-- 2019-10-22 23:59:00 -->
         <!-- "Y-m-d H:i:s" -->
         <div id="count-down">
-            <countdown date="2019-10-22 23:59:00" inline-template>
+            <countdown date="Tue, 22 Oct 2019 23:59:00" inline-template>
                 <div class="countdown">
                 <div class="block">
-                    <p class="digit">{{ days }}</p>
+                    <p class="digit">{{ days | two_digits }}</p>
                     <p class="text">Days</p>
                 </div>
                 <div class="block">
-                    <p class="digit">{{ hours }}</p>
+                    <p class="digit">{{ hours | two_digits }}</p>
                     <p class="text">Hours</p>
                 </div>
                 <div class="block">
-                    <p class="digit">{{ minutes }}</p>
+                    <p class="digit">{{ minutes | two_digits }}</p>
                     <p class="text">Minutes</p>
                 </div>
                 <div class="block">
-                    <p class="digit">{{ seconds }}</p>
+                    <p class="digit">{{ seconds | two_digits }}</p>
                     <p class="text">Seconds</p>
                 </div>
                 </div>
@@ -81,7 +82,7 @@
                 :autoplay=true
                 :autoplayHoverPause=true
                 :navigationEnabled=false
-                :autoplayTimeout=2000>
+                :autoplayTimeout=4000>
                     <slide>
                         <img src="/static/images/photos/slideshow/1.jpg" alt="">
                     </slide>
@@ -150,13 +151,263 @@
                 </div>
             </div>
 
-            <div class="wedding-party">
+            <div class="wedding-party content">
+                <a name="wedding-party"></a>
                 <header class="content-header">
                     <h1>
-                    <div class="subHeading">Wedding Party</div>
-                    <a name="wedding-party"></a>
+                        <div class="subHeading">Wedding Party</div>
                     </h1>
                 </header>
+                <div class="subtitle is-4">Girls</div>
+                <div class="content">
+                    <div class="box">
+                        <!-- Julie -->
+                        <article class="media">
+                            <div class="media-left">
+                            <figure class="image is-128x128">
+                                <img src="/static/images/photos/weddingParty/girls/julie.jpg" alt="Julie">
+                            </figure>
+                            </div>
+                            <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>Julie</strong>
+                                </p>
+                                <p>
+                                    .
+                                </p>
+                                <p>
+                                    .
+                                </p>
+                                <p>
+                                    !
+                                </p>
+                            </div>
+                            <nav class="level is-mobile">
+                                <div class="level-left">
+                                <a class="level-item" aria-label="reply">
+                                    <span class="icon is-small">
+                                    <i class="fas fa-reply" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                                <a class="level-item" aria-label="retweet">
+                                    <span class="icon is-small">
+                                    <i class="fas fa-retweet" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                                <a class="level-item" aria-label="like">
+                                    <span class="icon is-small">
+                                    <i class="fas fa-heart" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                                </div>
+                            </nav>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="box">
+                        <!-- Naz -->
+                        <article class="media">
+                            <div class="media-left">
+                            <figure class="image is-128x128">
+                                <img src="/static/images/photos/weddingParty/girls/naz.jpg" alt="Nazareth">
+                            </figure>
+                            </div>
+                            <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>Naz</strong>
+                                </p>
+                                <p>
+                                    I'm part of Laura’s elite entourage.
+                                </p>
+                                <p>We really clicked senior year of high school, which paved the way to continue our shenanigans in college. \m/</p>
+                                <p>
+                                    As a couple I met the soon to be Mr. & Mrs. back in 2010, where we all partook in nightly Pizza hut wing deliveries, competitive live or death monopoly, and the occasional movie night the best service Jester could offer.
+                                </p>
+                                <p>
+                                    I remember asking Laura if she loved homeboy one morning while he was playing basketball and she answered, "ehhh, he's alright." The first and last time I’ve ever heard her say she was in love. <strong>To future shenanigans with the Rangel’s!</strong>
+                                </p>
+                            </div>
+                            <nav class="level is-mobile">
+                                <div class="level-left">
+                                <a class="level-item" aria-label="reply">
+                                    <span class="icon is-small">
+                                    <i class="fas fa-reply" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                                <a class="level-item" aria-label="retweet">
+                                    <span class="icon is-small">
+                                    <i class="fas fa-retweet" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                                <a class="level-item" aria-label="like">
+                                    <span class="icon is-small">
+                                    <i class="fas fa-heart" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                                </div>
+                            </nav>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="box">
+                        <!-- Priscilla -->
+                        <article class="media">
+                            <div class="media-left">
+                            <figure class="image is-128x128">
+                                <img src="/static/images/photos/weddingParty/girls/pricilla.jpg" alt="Priscilla">
+                            </figure>
+                            </div>
+                            <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>Priscilla</strong>
+                                </p>
+                                <p>
+                                    February 1, 2018, is the day I realized Jose is so  awesome, oh and Laura too haha, but no all jokes aside I loved the fact that Jose is very supportive about everything Laura does and worries about them being truly united as one.
+                                </p>
+                                <p>
+                                    They both came to visit me at the hospital and were there for me throughout everything that day.  It was very emotional for me because I thought my life was over but they were both there to support me.
+                                </p>
+                                <p>
+                                    I love and admire their relationship. Honestly, I couldn’t be happier for you guys, y'all belong together! I hope y'all live happily ever after, you both deserve this fairy tale! <strong>Love you guys!</strong>
+                                </p>
+                            </div>
+                            <nav class="level is-mobile">
+                                <div class="level-left">
+                                <a class="level-item" aria-label="reply">
+                                    <span class="icon is-small">
+                                    <i class="fas fa-reply" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                                <a class="level-item" aria-label="retweet">
+                                    <span class="icon is-small">
+                                    <i class="fas fa-retweet" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                                <a class="level-item" aria-label="like">
+                                    <span class="icon is-small">
+                                    <i class="fas fa-heart" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                                </div>
+                            </nav>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="box">
+                        <!-- Sandra -->
+                        <article class="media">
+                            <div class="media-left">
+                            <figure class="image is-128x128">
+                                <img src="/static/images/photos/weddingParty/girls/sandra.jpg" alt="Sandra">
+                            </figure>
+                            </div>
+                            <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>Sandra</strong>
+                                </p>
+                                <p>
+                                    Laura and I became friends towards the end of our senior year in high school, BUT...I had noticed her wayyy before that. (This speaks volumes as our high school had nearly 4,000 students). Before I actually met her, there were two things that were obviously very important in her life, one was hair color. I swear this girl had a different color in her hair every time I saw her! The other...<strong>DANCING</strong>.
+                                </p>
+                                <p>
+                                    We were in a Latin dance club together and her passion for dancing radiated! When we actually met and became friends, this was how we'd have the most fun, dancing and singing our hearts out. We always said that we could never be with a guy that didn't know how to dance and then <strong>BAM!</strong> 
+                                </p>
+                                <p>
+                                    She fell in love with Jose. 
+                                </p>
+                                <p>
+                                    How would this last? How!? He doesn't know how to dance, and his hair is just…Brown. Nothing in common. 
+                                </p>
+                                <p>
+                                    But Jose reached out and asked for help on learning how to dance. He was open to learning, and Laura was open to teaching him. She was patient with him and although it wasn't a fast process, he didn't give up. 
+                                </p>
+                                <p>
+                                    Today, they dance their butts off to all kinds of music and you'd never know that they couldn't follow each other’s rhythm at first. 
+                                </p>
+                                <p>
+                                    Their relationship has taught me that it's easy to love someone that already knows how to dance. But true love is patient, open minded, and perseverant. Dancing is where they first implemented these qualities, but it's obvious that they continued these traits onto the rest of their relationship. 
+                                </p>
+                                <p>
+                                    It was funny seeing them struggle to dance the first time, but now I’m elated to witness their first dance as Mr. & Mrs. Rangel Escobedo.
+                                </p>
+                            </div>
+                            <nav class="level is-mobile">
+                                <div class="level-left">
+                                <a class="level-item" aria-label="reply">
+                                    <span class="icon is-small">
+                                    <i class="fas fa-reply" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                                <a class="level-item" aria-label="retweet">
+                                    <span class="icon is-small">
+                                    <i class="fas fa-retweet" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                                <a class="level-item" aria-label="like">
+                                    <span class="icon is-small">
+                                    <i class="fas fa-heart" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                                </div>
+                            </nav>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="box">
+                        <!-- Stormie -->
+                        <article class="media">
+                            <div class="media-left">
+                            <figure class="image is-128x128">
+                                <img src="/static/images/photos/weddingParty/girls/stormie.jpg" alt="Stormie">
+                            </figure>
+                            </div>
+                            <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>Stormie</strong>
+                                </p>
+                                <p>
+                                    Ever since I met Laura, she has always had this crazy love for dancing.
+                                </p>
+                                <p>
+                                    One night, Laura, Jose, and I went to club 2001. A song came on that Laura wanted to dance, so she and Jose made their way to the dance floor while I hung back and watched. 
+                                </p>
+                                <p>
+                                    I remember watching them and <strong>Laura looked sooo happy!</strong>
+                                </p>
+                                <p>
+                                    I mean how great must it feel to do something you love with the person you Love!
+                                </p>
+                                <p>
+                                    That’s what great relationships are about! I’m confident in their relationship because of moments like that one.
+                                </p>
+                            </div>
+                            <nav class="level is-mobile">
+                                <div class="level-left">
+                                <a class="level-item" aria-label="reply">
+                                    <span class="icon is-small">
+                                    <i class="fas fa-reply" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                                <a class="level-item" aria-label="retweet">
+                                    <span class="icon is-small">
+                                    <i class="fas fa-retweet" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                                <a class="level-item" aria-label="like">
+                                    <span class="icon is-small">
+                                    <i class="fas fa-heart" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                                </div>
+                            </nav>
+                            </div>
+                        </article>
+                    </div>
+                </div>
             </div>
 
             <div class="travel">
