@@ -84,32 +84,32 @@
                 :navigationEnabled=false
                 :autoplayTimeout=4000>
                     <slide>
-                        <img src="/static/images/photos/slideshow/1.jpg" alt="">
+                        <img src="/tooLate-toSay-No/static/images/photos/slideshow/1.jpg" alt="">
                     </slide>
                     <slide>
-                        <img src="/static/images/photos/slideshow/2.jpg" alt="">
+                        <img src="/tooLate-toSay-No/static/images/photos/slideshow/2.jpg" alt="">
                     </slide>
 
                     <slide>
-                        <img src="/static/images/photos/slideshow/4.jpg" alt="">
+                        <img src="/tooLate-toSay-No/static/images/photos/slideshow/4.jpg" alt="">
                     </slide>
                     <slide>
-                        <img src="/static/images/photos/slideshow/5.jpg" alt="">
+                        <img src="/tooLate-toSay-No/static/images/photos/slideshow/5.jpg" alt="">
                     </slide>
                     <slide>
-                        <img src="/static/images/photos/slideshow/6.jpg" alt="">
+                        <img src="/tooLate-toSay-No/static/images/photos/slideshow/6.jpg" alt="">
                     </slide>
                     <slide>
-                        <img src="/static/images/photos/slideshow/7.jpg" alt="">
+                        <img src="/tooLate-toSay-No/static/images/photos/slideshow/7.jpg" alt="">
                     </slide>
                     <slide>
-                        <img src="/static/images/photos/slideshow/8.jpg" alt="">
+                        <img src="/tooLate-toSay-No/static/images/photos/slideshow/8.jpg" alt="">
                     </slide>
                     <slide>
-                        <img src="/static/images/photos/slideshow/9.jpg" alt="">
+                        <img src="/tooLate-toSay-No/static/images/photos/slideshow/9.jpg" alt="">
                     </slide>
                     <slide>
-                        <img src="/static/images/photos/slideshow/10.jpg" alt="">
+                        <img src="/tooLate-toSay-No/static/images/photos/slideshow/10.jpg" alt="">
                     </slide>
                 </carousel>
             </div>
@@ -122,7 +122,7 @@
                 </h1>
                 </header>
                 <div class="sub-content">
-                    <img class="our-story-image" src="/static/images/photos/ourStory.jpg" alt="">
+                    <img class="our-story-image" src="/tooLate-toSay-No/static/images/photos/ourStory.jpg" alt="">
                     <p class="our-story">
                         It all started in high school and; no, we were not high
                         school sweet hearts.
@@ -166,7 +166,7 @@
                             <div class="media-left">
                             <figure class="image is-128x128">
                                 <img
-                                src="/static/images/photos/weddingParty/girls/julie.jpg"
+                                src="/tooLate-toSay-No/static/images/photos/weddingParty/girls/julie.jpg"
                                 alt="Julie">
                             </figure>
                             </div>
@@ -215,7 +215,7 @@
                         <article class="media">
                             <div class="media-left">
                             <figure class="image is-128x128">
-                                <img src="/static/images/photos/weddingParty/girls/naz.jpg" alt="Nazareth">
+                                <img src="/tooLate-toSay-No/static/images/photos/weddingParty/girls/naz.jpg" alt="Nazareth">
                             </figure>
                             </div>
                             <div class="media-content">
@@ -261,7 +261,7 @@
                         <article class="media">
                             <div class="media-left">
                             <figure class="image is-128x128">
-                                <img src="/static/images/photos/weddingParty/girls/priscilla.jpg" alt="Priscilla">
+                                <img src="/tooLate-toSay-No/static/images/photos/weddingParty/girls/priscilla.jpg" alt="Priscilla">
                             </figure>
                             </div>
                             <div class="media-content">
@@ -306,7 +306,7 @@
                         <article class="media">
                             <div class="media-left">
                             <figure class="image is-128x128">
-                                <img src="/static/images/photos/weddingParty/girls/sandra.jpg" alt="Sandra">
+                                <img src="/tooLate-toSay-No/static/images/photos/weddingParty/girls/sandra.jpg" alt="Sandra">
                             </figure>
                             </div>
                             <div class="media-content">
@@ -366,7 +366,7 @@
                         <article class="media">
                             <div class="media-left">
                             <figure class="image is-128x128">
-                                <img src="/static/images/photos/weddingParty/girls/stormie.jpg" alt="Stormie">
+                                <img src="/tooLate-toSay-No/static/images/photos/weddingParty/girls/stormie.jpg" alt="Stormie">
                             </figure>
                             </div>
                             <div class="media-content">

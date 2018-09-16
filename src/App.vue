@@ -19,7 +19,7 @@ export default {
   html, body { overflow-x: hidden !important;}
 
   body {
-    background: url("/static/images/splash4.png") no-repeat;
+    background: url("/tooLate-toSay-No/static/images/splash4.png") no-repeat;
     background-position: top;
     /* background-color: #1e264F; */
     font-family: 'Playfair Display', Helvetica, Arial, sans-serif !important;
@@ -70,7 +70,7 @@ export default {
     margin-right: 10px;
   }
 .countdown-header {
-    background: url("/static/images/largeDivider.png") no-repeat;
+    background: url("/tooLate-toSay-No/static/images/largeDivider.png") no-repeat;
     width: 100%;
     background-position: center;
     height: 10px;
@@ -138,7 +138,7 @@ export default {
 }
 
 header.content-header {
-    background: url("/static/images/divider.png") no-repeat top;
+    background: url("/tooLate-toSay-No/static/images/divider.png") no-repeat top;
     width: 100%;
     text-align: center;
     margin: 0 auto 6em auto;
